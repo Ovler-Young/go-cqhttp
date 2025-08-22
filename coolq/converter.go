@@ -4,12 +4,12 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/Mrs4s/MiraiGo/client"
-	"github.com/Mrs4s/MiraiGo/message"
-	"github.com/Mrs4s/MiraiGo/topic"
+	"github.com/Ovler-Young/MiraiGo/client"
+	"github.com/Ovler-Young/MiraiGo/message"
+	"github.com/Ovler-Young/MiraiGo/topic"
 	log "github.com/sirupsen/logrus"
 
-	"github.com/Mrs4s/go-cqhttp/global"
+	"github.com/Ovler-Young/go-cqhttp/global"
 )
 
 func convertGroupMemberInfo(groupID int64, m *client.GroupMemberInfo) global.MSG {
