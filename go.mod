@@ -69,3 +69,5 @@ require (
 )
 
 replace github.com/Mrs4s/go-cqhttp => github.com/Ovler-Young/go-cqhttp v1.2.1-0.20250821080946-e8426b8fc38e
+
+replace github.com/Ovler-Young/MiraiGo => github.com/Ovler-Young/MiraiGo v0.0.0-20251205092530-9b95578a3780
