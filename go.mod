@@ -5,7 +5,7 @@ go 1.20
 require (
 	github.com/FloatTech/sqlite v1.6.3
 	github.com/Microsoft/go-winio v0.6.2-0.20230724192519-b29bbd58a65a
-	github.com/Ovler-Young/MiraiGo v0.0.0-20250822103628-2223f7b77db3
+	github.com/Ovler-Young/MiraiGo v0.0.0-20251205100716-5c0e022a99bb
 	github.com/RomiChan/syncx v0.0.0-20221202055724-5f842c53020e
 	github.com/RomiChan/websocket v1.4.3-0.20220227141055-9b2c6168c9c5
 	github.com/fumiama/go-base16384 v1.7.0
@@ -69,5 +69,3 @@ require (
 )
 
 replace github.com/Mrs4s/go-cqhttp => github.com/Ovler-Young/go-cqhttp v1.2.1-0.20250821080946-e8426b8fc38e
-
-replace github.com/Ovler-Young/MiraiGo => github.com/Ovler-Young/MiraiGo v0.0.0-20251205092530-9b95578a3780
