@@ -59,6 +59,16 @@ func newClient(t time.Duration) *http.Client {
 // ErrOverSize 响应主体过大时返回此错误
 var ErrOverSize = errors.New("oversize")
 
+// CheckURL404 performs a HEAD request to check if URL returns 404
+func CheckURL404(url string) (bool, error) {
+	resp, err := client.Head(url)
+	if err != nil {
+		return false, err
+	}
+	defer resp.Body.Close()
+	return resp.StatusCode == http.StatusNotFound, nil
+}
+
 // UserAgent HTTP请求时使用的UA
 const UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 Edg/87.0.664.66"
 
