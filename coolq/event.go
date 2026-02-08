@@ -657,12 +657,6 @@ func (bot *CQBot) checkMedia(e []message.IMessageElement, sourceID int64) {
 				log.Infof("检测到 gchatpic_new URL，正在检查: %v", i.Url)
 				is404, checkErr := download.CheckURL404(i.Url)
 				log.Infof("URL检查结果: is404=%v, err=%v", is404, checkErr)
-				if is404 {
-					// wait 2 seconds
-					time.Sleep(2 * time.Second)
-					is404, checkErr = download.CheckURL404(i.Url)
-					log.Infof("URL检查结果: is404=%v, err=%v", is404, checkErr)
-				}
 			}
 			if i.Flash && sourceID != 0 {
 				u, err := bot.Client.GetGroupImageDownloadUrl(i.FileId, sourceID, i.Md5)
