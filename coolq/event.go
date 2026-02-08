@@ -654,14 +654,14 @@ func (bot *CQBot) checkMedia(e []message.IMessageElement, sourceID int64) {
 		case *message.GroupImageElement:
 			// Detect and fix 404 URLs for group images (gchatpic_new fallback URLs)
 			if strings.Contains(i.Url, "gchatpic_new") && sourceID != 0 {
-				if is404, _ := download.CheckURL404(i.Url); is404 {
-					u, err := bot.Client.GetGroupImageDownloadUrl(i.FileId, sourceID, i.Md5)
-					if err != nil {
-						log.Warnf("获取图片下载地址时出现错误: %v", err)
-					} else {
-						log.Debugf("图片URL 404，已获取新地址: %v", u)
-						i.Url = u
-					}
+				log.Infof("检测到 gchatpic_new URL，正在检查: %v", i.Url)
+				is404, checkErr := download.CheckURL404(i.Url)
+				log.Infof("URL检查结果: is404=%v, err=%v", is404, checkErr)
+				if is404 {
+					// wait 2 seconds
+					time.Sleep(2 * time.Second)
+					is404, checkErr = download.CheckURL404(i.Url)
+					log.Infof("URL检查结果: is404=%v, err=%v", is404, checkErr)
 				}
 			}
 			if i.Flash && sourceID != 0 {
