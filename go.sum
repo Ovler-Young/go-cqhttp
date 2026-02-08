@@ -10,6 +10,10 @@ github.com/Ovler-Young/MiraiGo v0.0.0-20251205100716-5c0e022a99bb h1:iotyUirU4q7
 github.com/Ovler-Young/MiraiGo v0.0.0-20251205100716-5c0e022a99bb/go.mod h1:t+iY3u93yHizE3vy0a0o5XeQ2w8r1+OjgtqKe15F49E=
 github.com/Ovler-Young/MiraiGo v0.0.0-20251205103144-798f901b668b h1:4Qpgy36JT2i4+n7r3HiqXvD3Px6jxWJH+POz6Z/Z/Zc=
 github.com/Ovler-Young/MiraiGo v0.0.0-20251205103144-798f901b668b/go.mod h1:t+iY3u93yHizE3vy0a0o5XeQ2w8r1+OjgtqKe15F49E=
+github.com/Ovler-Young/MiraiGo v0.0.0-20251207042903-f5534936fd81 h1:LGnY/S5Fd+kl2Ex6McVce1y/WqnggN0Ldhl+G0f2G64=
+github.com/Ovler-Young/MiraiGo v0.0.0-20251207042903-f5534936fd81/go.mod h1:t+iY3u93yHizE3vy0a0o5XeQ2w8r1+OjgtqKe15F49E=
+github.com/Ovler-Young/MiraiGo v0.0.0-20251207060234-de2a3ea12119 h1:pMi0IJPX92i+PIoMuM4PCC1indEpF+uYhu+tABwqFzk=
+github.com/Ovler-Young/MiraiGo v0.0.0-20251207060234-de2a3ea12119/go.mod h1:t+iY3u93yHizE3vy0a0o5XeQ2w8r1+OjgtqKe15F49E=
 github.com/RomiChan/protobuf v0.1.1-0.20230204044148-2ed269a2e54d h1:/Xuj3fIiMY2ls1TwvPKmaqQrtJsPY+c9s+0lOScVHd8=
 github.com/RomiChan/protobuf v0.1.1-0.20230204044148-2ed269a2e54d/go.mod h1:2Ie+hdBFQpQFDHfeklgxoFmQRCE7O+KwFpISeXq7OwA=
 github.com/RomiChan/syncx v0.0.0-20221202055724-5f842c53020e h1:wR3MXQ3VbUlPKOOUwLOYgh/QaJThBTYtsl673O3lqSA=
